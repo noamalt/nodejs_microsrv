@@ -39,6 +39,6 @@ broker.createService(ApiService);
 broker.loadServices(folder = "./services", fileMask = "**/*.service.ts");
 // Start server
 broker.start();
-
+//test
 // Switch to REPL mode
 broker.repl();
