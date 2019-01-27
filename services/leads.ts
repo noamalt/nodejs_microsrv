@@ -37,7 +37,7 @@ countryid:2,
 .then(() => broker.call("leads.find").then(console.log));
 
 // List users with pagination
-.then(() => broker.call("leads.list", { page: 2, pageSize: 5 }).then(console.log));
+.then(() => broker.call("leads.list", { page: 2, pageSize: 20 }).then(console.log));
 
 // Get a user
 .then(() => broker.call("leads.get", { id: 2 }).then(console.log));

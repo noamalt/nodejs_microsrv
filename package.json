@@ -6,9 +6,12 @@
   "dependencies": {
     "amqplib": "^0.5.3",
     "angular-common": "^0.1.0",
+    "email-templates": "file:email-templates",
     "express": "^4.16.4",
+    "http-status-codes": "^1.3.0",
     "ioredis": "^4.3.0",
     "jsonwebtoken": "^8.3.0",
+    "mail": "^0.2.3",
     "moleculer": "^0.13.3",
     "moleculer-db": "^0.7.7",
     "moleculer-db-adapter-mongo": "^0.4.2",
@@ -17,7 +20,9 @@
     "moleculer-repl": "^0.5.2",
     "moleculer-twilio": "^1.0.10",
     "moleculer-web": "^0.8.2",
+    "nodemailer": "^5.1.1",
     "npm-runner": "^0.1.4",
+    "pug": "^2.0.3",
     "redis": "^2.8.0",
     "redis-monitor": "^0.0.5",
     "socket.io": "^2.2.0"

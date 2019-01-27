@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node_microsrv/searchcontact.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">node_microsrv</a> searchcontact.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/259</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/180</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/43</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/46</span>
+      </div>
+    </div>
+    <p class="quiet">
+      Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+    </p>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+;<span class="cstat-no" title="statement not covered" >(<span class="fstat-no" title="function not covered" >fu</span>nction(){var ROOT_NAME_SPACE=<span class="cstat-no" title="statement not covered" >{};</span>var root=<span class="cstat-no" title="statement not covered" >this;</span>var ROOTNSNAME;var assertRootName=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(!ROOTNSNAME){<span class="cstat-no" title="statement not covered" >throw"No Root Name configured for the namespace. Try calling namespace.init(\"MyNameSpace\");"}</span>}</span>;</span>var namespace=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){"use strict";<span class="cstat-no" title="statement not covered" >assertRootName();v</span>ar a=<span class="cstat-no" title="statement not covered" >arguments;<span class="cstat-no" title="statement not covered" ></span>for(var i=0;i&lt;a.length;i=i+1){var d=<span class="cstat-no" title="statement not covered" >a[i].split(".");</span>var o=<span class="cstat-no" title="statement not covered" >root[ROOTNSNAME];</span>var s=<span class="cstat-no" title="statement not covered" >(d[0]===ROOTNSNAME)?1:0;</span>var n=<span class="cstat-no" title="statement not covered" >ROOTNSNAME;<span class="cstat-no" title="statement not covered" ></span>for(var j=s;j&lt;d.length;j=j+1){<span class="cstat-no" title="statement not covered" >n=n+"."+d[j];<span class="cstat-no" title="statement not covered" >o</span>[d[j]]=o[d[j]]||(<span class="fstat-no" title="function not covered" >fu</span>nction(ns){var _parent;var _nsName=<span class="cstat-no" title="statement not covered" >n;<span class="cstat-no" title="statement not covered" ></span>ns.extend=ROOT_NAME_SPACE.extend;<span class="cstat-no" title="statement not covered" >n</span>s.getChildren=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return ROOT_NAME_SPACE.getChildren(ns)}</span>;<span class="cstat-no" title="statement not covered" >n</span>s.setParent=<span class="fstat-no" title="function not covered" >fu</span>nction(p){<span class="cstat-no" title="statement not covered" >_parent=p;}</span>;<span class="cstat-no" title="statement not covered" >n</span>s.getNSName=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return _nsName;}</span>;<span class="cstat-no" title="statement not covered" >n</span>s.toString=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return _nsName;}</span>;<span class="cstat-no" title="statement not covered" >n</span>s.isNamespace=true;<span class="cstat-no" title="statement not covered" >n</span>s.parent=<span class="fstat-no" title="function not covered" >fu</span>nction(propertyName){<span class="cstat-no" title="statement not covered" >if(propertyName){<span class="cstat-no" title="statement not covered" >return _parent[propertyName];}</span></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >return _parent;}</span>;<span class="cstat-no" title="statement not covered" >return ns;}</span>)({});<span class="cstat-no" title="statement not covered" >o[d[j]].setParent(o);<span class="cstat-no" title="statement not covered" >o</span>=o[d[j]];}</span>}
+<span class="cstat-no" title="statement not covered" >return o;}</span>;<span class="cstat-no" title="statement not covered" >ROOT_NAME_SPACE.namespace=namespace;<span class="cstat-no" title="statement not covered" >R</span>OOT_NAME_SPACE.setParent=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >assertRootName();}</span>;<span class="cstat-no" title="statement not covered" >R</span>OOT_NAME_SPACE.isNamespace=true;<span class="cstat-no" title="statement not covered" >R</span>OOT_NAME_SPACE.getNSName=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >assertRootName();<span class="cstat-no" title="statement not covered" >r</span>eturn ROOTNSNAME;}</span>;<span class="cstat-no" title="statement not covered" >R</span>OOT_NAME_SPACE.toString=ROOT_NAME_SPACE.getNSName;<span class="cstat-no" title="statement not covered" >R</span>OOT_NAME_SPACE.parent=<span class="fstat-no" title="function not covered" >fu</span>nction(propertyName){<span class="cstat-no" title="statement not covered" >return propertyName?root[propertyName]:root;}</span>;<span class="cstat-no" title="statement not covered" >R</span>OOT_NAME_SPACE.getChildren=<span class="fstat-no" title="function not covered" >fu</span>nction(me){var result=<span class="cstat-no" title="statement not covered" >[];<span class="cstat-no" title="statement not covered" ></span>me=me||this;<span class="cstat-no" title="statement not covered" >f</span>or(var k in me){<span class="cstat-no" title="statement not covered" >if(me[k]&amp;&amp;me[k].isNamespace){var addChild=<span class="cstat-no" title="statement not covered" >true;<span class="cstat-no" title="statement not covered" ></span>for(var rKey in result){<span class="cstat-no" title="statement not covered" >if(result[rKey]===me[k])<span class="cstat-no" title="statement not covered" >addChild=false;}</span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >if(addChild){<span class="cstat-no" title="statement not covered" >result.push(me[k]);}</span>}</span>}
+<span class="cstat-no" title="statement not covered" >return result===[]?undefined:result;}</span>;<span class="cstat-no" title="statement not covered" >ROOT_NAME_SPACE.extend=<span class="fstat-no" title="function not covered" >fu</span>nction(c,p,o){"use strict";var _BASE_=<span class="cstat-no" title="statement not covered" >'base';</span>var override=<span class="cstat-no" title="statement not covered" >false;</span>var child;var parent;<span class="cstat-no" title="statement not covered" >if(arguments.length&gt;2){<span class="cstat-no" title="statement not covered" >child=c;<span class="cstat-no" title="statement not covered" >p</span>arent=p;<span class="cstat-no" title="statement not covered" >o</span>verride=((typeof arguments[2])==="boolean")?o:override;}</span></span></span>
+<span class="cstat-no" title="statement not covered" >if(arguments.length==2){<span class="cstat-no" title="statement not covered" >if((typeof arguments[1])==="boolean"){<span class="cstat-no" title="statement not covered" >child=this;<span class="cstat-no" title="statement not covered" >p</span>arent=c;<span class="cstat-no" title="statement not covered" >o</span>verride=p;}</span>else{<span class="cstat-no" title="statement not covered" >child=c;<span class="cstat-no" title="statement not covered" >p</span>arent=p;}</span>}</span></span>
+<span class="cstat-no" title="statement not covered" >if(arguments.length==1){<span class="cstat-no" title="statement not covered" >child=this;<span class="cstat-no" title="statement not covered" >p</span>arent=c;}</span></span>
+<span class="cstat-no" title="statement not covered" >if(!child||!parent){<span class="cstat-no" title="statement not covered" >throw new Error("Insufficient arguments for extend");}</span></span>
+<span class="cstat-no" title="statement not covered" >if(!(typeof child==="object")||!(typeof parent==="object")){<span class="cstat-no" title="statement not covered" >console.warn("Both child and parent must be objects, naughty, naughty");<span class="cstat-no" title="statement not covered" >r</span>eturn child;}</span></span>
+<span class="cstat-no" title="statement not covered" >if(child===parent){<span class="cstat-no" title="statement not covered" >console.warn("Child and parent are the same, naughty, naughty");<span class="cstat-no" title="statement not covered" >r</span>eturn;}</span></span>
+var property;<span class="cstat-no" title="statement not covered" >for(property in parent){<span class="cstat-no" title="statement not covered" >if(property in child){<span class="cstat-no" title="statement not covered" >if(override){var to=<span class="cstat-no" title="statement not covered" >child[property];</span>var from=<span class="cstat-no" title="statement not covered" >parent[property];</span>var temp;<span class="cstat-no" title="statement not covered" >if(Array.isArray(from)){<span class="cstat-no" title="statement not covered" >temp=(to&amp;&amp;Array.isArray(to))?to:[];<span class="cstat-no" title="statement not covered" >c</span>hild[property]=e(temp,from,override);}</span>else <span class="cstat-no" title="statement not covered" >if(typeof from==="object"){<span class="cstat-no" title="statement not covered" >temp=(to&amp;&amp;((typeof to)==="object"))?to:{};<span class="cstat-no" title="statement not covered" >c</span>hild[property]=e(temp,from,override);}</span>else{<span class="cstat-no" title="statement not covered" >child[property]=parent[property];}</span>}</span></span>else{var to=<span class="cstat-no" title="statement not covered" >child[property];</span>var from=<span class="cstat-no" title="statement not covered" >parent[property];<span class="cstat-no" title="statement not covered" ></span>if((typeof to==="function")&amp;&amp;(typeof from==="function")){<span class="cstat-no" title="statement not covered" >if(Object.keys(ROOT_NAME_SPACE).indexOf(property)===-1){var assignBase=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(t,f){<span class="cstat-no" title="statement not covered" >return <span class="fstat-no" title="function not covered" >fu</span>nction(){var temp=<span class="cstat-no" title="statement not covered" >this[_BASE_]?this[_BASE_]:undefined;<span class="cstat-no" title="statement not covered" ></span>this[_BASE_]=f;v</span>ar result=<span class="cstat-no" title="statement not covered" >t.apply(this,arguments);<span class="cstat-no" title="statement not covered" ></span>if(temp){<span class="cstat-no" title="statement not covered" >this[_BASE_]=temp;}</span></span></span></span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >return result;}</span>;};<span class="cstat-no" title="statement not covered" >child[property]=assignBase(to,from);}</span>}}}else{<span class="cstat-no" title="statement not covered" >if(!(child===parent[property])&amp;&amp;!(typeof parent[property]==="object"&amp;&amp;parent[property].isNamespace)){<span class="cstat-no" title="statement not covered" >child[property]=parent[property];}</span>}</span>}
+<span class="cstat-no" title="statement not covered" >child.setParent(parent);<span class="cstat-no" title="statement not covered" >r</span>eturn child;}</span>;<span class="cstat-no" title="statement not covered" >namespace.init=<span class="fstat-no" title="function not covered" >fu</span>nction(rootName){<span class="cstat-no" title="statement not covered" >if(ROOTNSNAME){<span class="cstat-no" title="statement not covered" >if(rootName!==ROOTNSNAME){<span class="cstat-no" title="statement not covered" >throw"Root Namespace is already set. You cannot change the root NameSpace from: "+ROOTNSNAME+" to: "+rootName;}</span>else{<span class="cstat-no" title="statement not covered" >console.warn("Root Namespace is already set to: "+ROOTNSNAME);}</span>}</span></span></span>
+<span class="cstat-no" title="statement not covered" >ROOTNSNAME=rootName||ROOTNSNAME;<span class="cstat-no" title="statement not covered" >r</span>oot[ROOTNSNAME]=ROOT_NAME_SPACE;}</span>;<span class="cstat-no" title="statement not covered" >ROOT_NAME_SPACE.noConflict=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >assertRootName();v</span>ar previous_RNS;<span class="cstat-no" title="statement not covered" >if(root!=null){<span class="cstat-no" title="statement not covered" >previous_RNS=root[ROOTNSNAME];}</span></span></span>
+<span class="cstat-no" title="statement not covered" >root[ROOTNSNAME]=previous_RNS;<span class="cstat-no" title="statement not covered" >r</span>eturn ROOT_NAME_SPACE;}</span>;<span class="cstat-no" title="statement not covered" >if(typeof module!=='undefined'&amp;&amp;module.exports){<span class="cstat-no" title="statement not covered" >module.exports=namespace;}</span></span>
+else <span class="cstat-no" title="statement not covered" >if(typeof define!=='undefined'&amp;&amp;define.amd){<span class="cstat-no" title="statement not covered" >define("namespace",[],<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >return namespace;}</span>);}</span></span>
+<span class="cstat-no" title="statement not covered" >root.namespace=namespace;}</span>());;<span class="cstat-no" title="statement not covered" >namespace.init("RocketReachAPI");;<span class="cstat-no" title="statement not covered" ></span>(<span class="fstat-no" title="function not covered" >fu</span>nction(ns){<span class="cstat-no" title="statement not covered" >ns.BASE_URL="//api.rocketreach.co/v1/api";v</span>ar API_KEY_ERROR=<span class="cstat-no" title="statement not covered" >"[RocketReach]:API Key not Set. Please call 'RocketReachAPI.init($API_KEY)'";</span>var USER;var pendingProfiles=<span class="cstat-no" title="statement not covered" >{};<span class="cstat-no" title="statement not covered" ></span>Object.defineProperty(ns,"API_KEY",{get:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(USER&amp;&amp;USER.api_key){<span class="cstat-no" title="statement not covered" >return USER.api_key;}</span></span></span></span>
+<span class="cstat-no" title="statement not covered" >throw API_KEY_ERROR;}</span>,set:<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >throw API_KEY_ERROR;}</span>});<span class="cstat-no" title="statement not covered" >ns.DEBUG=false;v</span>ar _debug=<span class="cstat-no" title="statement not covered" >ns._debug=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(ns.DEBUG&amp;&amp;console&amp;&amp;console.log){<span class="cstat-no" title="statement not covered" >console.log.apply(console,arguments);}</span>}</span></span>
+var _error=<span class="cstat-no" title="statement not covered" >ns._error=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(ns.DEBUG&amp;&amp;console&amp;&amp;console.error){<span class="cstat-no" title="statement not covered" >console.error.apply(console,arguments);}</span>}</span></span>
+var genericError=<span class="cstat-no" title="statement not covered" >ns.genericError=<span class="fstat-no" title="function not covered" >fu</span>nction(d,jqXHR){<span class="cstat-no" title="statement not covered" >if(jqXHR&amp;&amp;jqXHR.responseJSON){<span class="cstat-no" title="statement not covered" >d.reject(jqXHR.responseJSON,jqXHR.status)}</span>else{<span class="cstat-no" title="statement not covered" >d.reject(jqXHR.responseText,jqXHR.status)}</span>}</span></span>
+var genericSuccess=<span class="cstat-no" title="statement not covered" >ns.genericError=<span class="fstat-no" title="function not covered" >fu</span>nction(d,data){<span class="cstat-no" title="statement not covered" >d.resolve(data);}</span></span>
+var enforceAPIKEY=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(!USER||!USER.api_key){<span class="cstat-no" title="statement not covered" >throw API_KEY_ERROR;}</span>}</span></span>
+<span class="cstat-no" title="statement not covered" >ns.init=<span class="fstat-no" title="function not covered" >fu</span>nction(options){<span class="cstat-no" title="statement not covered" >if(!options||!options.api_key||!options.api_key.length){var errorMessage=<span class="cstat-no" title="statement not covered" >"RocketReachAPI.init() must be called with a valid 'api_key'";<span class="cstat-no" title="statement not covered" ></span>if(options.error&amp;&amp;typeof options.error=="function"){<span class="cstat-no" title="statement not covered" >options.error(errorMessage);}</span>else{<span class="cstat-no" title="statement not covered" >throw errorMessage;}</span>}</span></span></span>
+var callSuccess=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(user){<span class="cstat-no" title="statement not covered" >if(options.success&amp;&amp;typeof options.success=="function"){<span class="cstat-no" title="statement not covered" >options.success(user);}</span>}</span></span>
+var callError=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(jqXHR){<span class="cstat-no" title="statement not covered" >if(options.error&amp;&amp;typeof options.error=="function"){<span class="cstat-no" title="statement not covered" >if(jqXHR&amp;&amp;jqXHR.responseJSON){<span class="cstat-no" title="statement not covered" >options.error(jqXHR.responseJSON,jqXHR.status);}</span>else{<span class="cstat-no" title="statement not covered" >options.error(jqXHR.responseText,jqXHR.status);}</span>}</span>}</span></span>
+var getAccount=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(USER&amp;&amp;USER.api_key&amp;&amp;USER.api_key==options.api_key){<span class="cstat-no" title="statement not covered" >callSuccess(USER);}</span>else{<span class="cstat-no" title="statement not covered" >_debug("[RocketReach]:Loading Account",options.api_key);v</span>ar params=<span class="cstat-no" title="statement not covered" >{"api_key":options.api_key};<span class="cstat-no" title="statement not covered" ></span>if(options.external_user_id){<span class="cstat-no" title="statement not covered" >console.log(this);<span class="cstat-no" title="statement not covered" >p</span>arams.external_user_id=options.external_user_id;}</span></span></span></span>
+<span class="cstat-no" title="statement not covered" >jQuery.get(ns.BASE_URL+"/account",params).done(<span class="fstat-no" title="function not covered" >fu</span>nction(user){<span class="cstat-no" title="statement not covered" >_debug("[RocketReach]:Account Found:",user);<span class="cstat-no" title="statement not covered" >i</span>f(!USER||!USER.api_key||USER.api_key!=user.api_key){<span class="cstat-no" title="statement not covered" >USER=user;}</span></span></span>
+<span class="cstat-no" title="statement not covered" >setTimeout(poller,pollingDelay);<span class="cstat-no" title="statement not covered" >c</span>allSuccess(user);}</span>).fail(callError)}}
+<span class="cstat-no" title="statement not covered" >if(typeof jQuery!='undefined'){<span class="cstat-no" title="statement not covered" >try{var version=<span class="cstat-no" title="statement not covered" >/^(\d*)\.(\d*)/.exec(jQuery.fn.jquery);<span class="cstat-no" title="statement not covered" ></span>if(parseInt(version[1])&gt;=1&amp;&amp;parseInt(version[2])&gt;=5){<span class="cstat-no" title="statement not covered" >getAccount();}</span>else{<span class="cstat-no" title="statement not covered" >throw"[RocketReach]:init() requires JQuery 1.5 or above!";}</span>}</span>catch(e){<span class="cstat-no" title="statement not covered" >_error("[RocketReach]:init():",e);<span class="cstat-no" title="statement not covered" >t</span>hrow"[RocketReach]:init() requires JQuery 1.5 or above!";}</span>}</span>else{<span class="cstat-no" title="statement not covered" >_debug("[RocketReach]:init() requires JQuery 1.5 or above!. Loading Jquery Now");f</span>unction <span class="fstat-no" title="function not covered" >getScript(</span>url,success){var script=<span class="cstat-no" title="statement not covered" >document.createElement('script');<span class="cstat-no" title="statement not covered" ></span>script.src=url;v</span>ar head=<span class="cstat-no" title="statement not covered" >document.getElementsByTagName('head')[0],</span>done=<span class="cstat-no" title="statement not covered" >false;<span class="cstat-no" title="statement not covered" ></span>script.onload=script.onreadystatechange=<span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(!done&amp;&amp;(!this.readyState||this.readyState=='loaded'||this.readyState=='complete')){<span class="cstat-no" title="statement not covered" >done=true;<span class="cstat-no" title="statement not covered" >s</span>uccess();<span class="cstat-no" title="statement not covered" >s</span>cript.onload=script.onreadystatechange=null;<span class="cstat-no" title="statement not covered" >h</span>ead.removeChild(script);}</span>}</span></span></span>
+<span class="cstat-no" title="statement not covered" >head.appendChild(script);}</span>
+<span class="cstat-no" title="statement not covered" >getScript('//code.jquery.com/jquery-1.12.0.min.js',function <span class="fstat-no" title="function not covered" >onJQueryLoaded(</span>){<span class="cstat-no" title="statement not covered" >$.noConflict();<span class="cstat-no" title="statement not covered" >g</span>etAccount();}</span>);}</span>}
+var pollingDelay=<span class="cstat-no" title="statement not covered" >1000;</span>var poller=<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction(){<span class="cstat-no" title="statement not covered" >if(pendingProfiles&amp;&amp;Object.keys(pendingProfiles).length){var ids=<span class="cstat-no" title="statement not covered" >Object.keys(pendingProfiles).join(",");<span class="cstat-no" title="statement not covered" ></span>jQuery.get(ns.BASE_URL+"/checkStatus",{'api_key':ns.API_KEY,'ids':ids}).then(<span class="fstat-no" title="function not covered" >fu</span>nction(profiles){<span class="cstat-no" title="statement not covered" >if(profiles&amp;&amp;profiles.length){<span class="cstat-no" title="statement not covered" >for(var p=0;p&lt;profiles.length;p++){var profile=<span class="cstat-no" title="statement not covered" >profiles[p];<span class="cstat-no" title="statement not covered" ></span>if(profile.status=="complete"||profile.status=="failed"){<span class="cstat-no" title="statement not covered" >_debug("Profile now ready",profile);<span class="cstat-no" title="statement not covered" >p</span>endingProfiles[profile.id].d.resolve([profile]);<span class="cstat-no" title="statement not covered" >d</span>elete pendingProfiles[profile.id];}</span>}</span>}</span>}</span>)}</span></span></span>
+<span class="cstat-no" title="statement not covered" >setTimeout(poller,pollingDelay);}</span>
+<span class="cstat-no" title="statement not covered" >ns.lookupProfile=<span class="fstat-no" title="function not covered" >fu</span>nction(options){var d=<span class="cstat-no" title="statement not covered" >jQuery.Deferred();<span class="cstat-no" title="statement not covered" ></span>try{var url=<span class="cstat-no" title="statement not covered" >ns.BASE_URL+"/lookupProfile?";</span>var params=<span class="cstat-no" title="statement not covered" >jQuery.param(jQuery.extend({"api_key":ns.API_KEY},options),true);<span class="cstat-no" title="statement not covered" ></span>jQuery.get(url+params).done(<span class="fstat-no" title="function not covered" >fu</span>nction(profiles){<span class="cstat-no" title="statement not covered" >if(profiles&amp;&amp;profiles.length){var allOK=<span class="cstat-no" title="statement not covered" >true;<span class="cstat-no" title="statement not covered" ></span>for(var p=0;p&lt;profiles.length;p++){var profile=<span class="cstat-no" title="statement not covered" >profiles[p];<span class="cstat-no" title="statement not covered" ></span>_debug("Profile Found",profile)</span></span></span></span></span></span>
+<span class="cstat-no" title="statement not covered" >if(profile&amp;&amp;profile.status!="complete"&amp;&amp;profile.status!="failed"){<span class="cstat-no" title="statement not covered" >allOK=false;<span class="cstat-no" title="statement not covered" >p</span>endingProfiles[profile.id]={p:profile,d:d};}</span>}</span>
+<span class="cstat-no" title="statement not covered" >if(allOK){<span class="cstat-no" title="statement not covered" >d.resolve(profiles);}</span>}</span>}).fail(genericError.bind(undefined,d))}catch(e){<span class="cstat-no" title="statement not covered" >d.reject(e);}</span>
+<span class="cstat-no" title="statement not covered" >return d;}</span>
+<span class="cstat-no" title="statement not covered" >ns.search=<span class="fstat-no" title="function not covered" >fu</span>nction(options){var d=<span class="cstat-no" title="statement not covered" >jQuery.Deferred();<span class="cstat-no" title="statement not covered" ></span>try{var url=<span class="cstat-no" title="statement not covered" >ns.BASE_URL+"/search?";</span>var params=<span class="cstat-no" title="statement not covered" >jQuery.param(jQuery.extend({"api_key":ns.API_KEY},options),true);<span class="cstat-no" title="statement not covered" ></span>jQuery.get(url+params).done(genericSuccess.bind(undefined,d)).fail(genericError.bind(undefined,d))}</span>catch(e){<span class="cstat-no" title="statement not covered" >d.reject(e);}</span></span></span>
+<span class="cstat-no" title="statement not covered" >return d;}</span>
+<span class="cstat-no" title="statement not covered" >ns.account=<span class="fstat-no" title="function not covered" >fu</span>nction(){var d=<span class="cstat-no" title="statement not covered" >jQuery.Deferred();<span class="cstat-no" title="statement not covered" ></span>try{var url=<span class="cstat-no" title="statement not covered" >ns.BASE_URL+"/account";<span class="cstat-no" title="statement not covered" ></span>jQuery.get(url,{"api_key":ns.API_KEY}).done(genericSuccess.bind(undefined,d)).fail(genericError.bind(undefined,d))}</span>catch(e){<span class="cstat-no" title="statement not covered" >d.reject(e);}</span></span></span>
+<span class="cstat-no" title="statement not covered" >return d;}</span>}(RocketReachAPI));
+&nbsp;
+&nbsp;
+    var API_KEY = <span class="cstat-no" title="statement not covered" >"202411kf9f8086bea40a8ad4a043d2d4165f148";</span>
+&nbsp;
+    //Call lookup
+    var mySuccessFunction = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >fu</span>nction (account) {</span>
+            //Lookup Profile
+<span class="cstat-no" title="statement not covered" >            RocketReachAPI.lookupProfile({</span>
+            name: "Marc Benioff",
+            current_employer: "Salesforce"
+        }).then(<span class="fstat-no" title="function not covered" >fu</span>nction (profiles) {
+            //Print Result
+<span class="cstat-no" title="statement not covered" >            console.log(profiles[0] );</span>
+        });
+    }
+&nbsp;
+    //Initialise
+<span class="cstat-no" title="statement not covered" >    RocketReachAPI.init({</span>
+        "api_key":API_KEY,
+        "success": mySuccessFunction,
+        "error": myErrorHander
+    });
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Jan 27 2019 16:30:33 GMT+0200 (Jerusalem Standard Time)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+<script src="..\block-navigation.js"></script>
+</body>
+</html>
