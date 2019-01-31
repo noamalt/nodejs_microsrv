@@ -25,8 +25,8 @@ broker.start()
 
 // Create a new user
 .then(() => broker.call("leads.create", {
-    firstname: "john",
-    lastname: "John Doe",
+    firstname: "Noam",
+    lastname: "test",
     email:"noamtest@yopmail.com",
 phone:"0546889419",
 countryid:2,
