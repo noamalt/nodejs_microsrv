@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "activedirectory": "^0.7.2",
     "amqplib": "^0.5.3",
     "angular-common": "^0.1.0",
     "email-templates": "file:email-templates",
