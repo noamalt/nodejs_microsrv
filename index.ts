@@ -3,8 +3,8 @@ let ApiService = require("moleculer-web");
 
 let broker = new ServiceBroker({ logger: console,
     nodeID: "server-1",
-    transporter: "amqp://localhost:5672",
-   // transporter: "redis://localhost:6379"
+   // transporter: "amqp://localhost:5672",
+  transporter: "redis://localhost:6379",
    cacher: "redis://localhost:6379"
 });
 
